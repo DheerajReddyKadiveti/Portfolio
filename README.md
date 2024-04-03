@@ -16,7 +16,7 @@ Welcome to my portfolio repository! This repository contains a collection of pro
 - **Description:** Explore other projects showcasing proficiency in Java development, database optimization, and cloud deployment.
 
 ## How to Run
-
+## How to Run
 1. Clone the repository: `git clone https://github.com/dheerajreddykadiveti/portfolio.git`
 2. Navigate to the project directory: `cd portfolio`
 3. Choose a project and follow the instructions in its README.md file to run locally.
