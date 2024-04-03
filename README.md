@@ -1,31 +1,35 @@
-# Dheeraj Reddy Kadiveti's Portfolio
+For APIs
 
-Welcome to my portfolio repository! This repository contains a collection of projects showcasing my skills as a full-stack Java developer and computer science graduate. From web applications built with Spring Boot and Angular to cloud deployments on AWS, each project demonstrates my passion for innovation and problem-solving.
+# Run test
+```
+$mvnw clean test
+```
 
-## Projects
+# Create WAR file
+```
+$mvnw clean package
+```
 
-### 1. Treasury Dashboard Web Application
-- **Description:** Developed and maintained a web application for Sumitomo Mitsui Banking Corporation, seamlessly integrating loan services and treasury operations.
-- **Technologies Used:** Java, Spring Boot, Angular, AWS (EC2, S3, Lambda), Docker, Kubernetes
+#  How to run web server with Apache Tomcat ?
 
-### 2. TVS Supply Chain Solutions Web Application
-- **Description:** Contributed to the development of a supply chain management application for TVS Supply Chain Solutions, enhancing operational transparency and efficiency.
-- **Technologies Used:** Java, Spring Framework, HTML/CSS/JS, MySQL, Apache Kafka
+```
+$mvnw tomcat7:run
+```
 
-### 3. Additional Projects
-- **Description:** Explore other projects showcasing proficiency in Java development, database optimization, and cloud deployment.
-
-## How to Run
-## How to Run
-1. Clone the repository: `git clone https://github.com/dheerajreddykadiveti/portfolio.git`
-2. Navigate to the project directory: `cd portfolio`
-3. Choose a project and follow the instructions in its README.md file to run locally.
-
-## Get in Touch
-
-Feel free to reach out if you have any questions, suggestions, or opportunities for collaboration. Let's connect and build something great together!
+#  Run in browser 
+* http://localhost:8080/api/hello
+* http://localhost:8080/api/hello.html
 
 
-- LinkedIn: [Dheeraj Reddy Kadiveti](https://www.linkedin.com/in/dheeraj-reddy-kadiveti/)
-- Email: [dkadivet@stevens.edu](mailto:dkadivet@stevens.edu)
 
+## Step to create server
+
+1. สร้าง MySQL Database
+```
+docker container run -d -p 3306:3306  \
+-e MYSQL_ROOT_PASSWORD=password \
+-e MYSQL_DATABASE=wallet \
+-e MYSQL_USER=user01 \
+-e MYSQL_PASSWORD=xitgmLwmp \
+--name db2 mysql:5.7.21
+```
